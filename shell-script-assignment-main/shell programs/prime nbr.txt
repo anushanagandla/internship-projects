@@ -1,0 +1,24 @@
+-------prime number-------
+
+prime(){
+		nbr=`expr $1 / 2`
+		i=2
+		f=0
+		while [ $i -le $nbr ]
+		do
+		n=`expr $1 % $i`
+		if [ $n == 0 ]
+		then 
+		f=`expr $f + 1`
+		break
+		fi
+		i=`expr $i + 1`
+		done
+		if [ $f == 1 ]
+		then
+		echo "$1 is Not Prime"
+		else
+		echo "$1 is Prime"
+		fi
+	}
+	prime 10
