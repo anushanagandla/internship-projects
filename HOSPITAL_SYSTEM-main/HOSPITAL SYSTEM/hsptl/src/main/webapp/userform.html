@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="userscript.js"></script>
+  <title>booking</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style type="text/css">
+input {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 5px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+#btn{
+font-size: 15px;
+}
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><i class="fa-solid fa-house-medical"></i>BELIEF HOSPITAL</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <button type="button" class="btn btn-danger btn-sm m-2"> <a class="nav-link active" aria-current="page"
+                                                                      href="departments.html">DOCTORS</a>
+          </button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-danger btn-sm m-2"><a class="nav-link active" aria-current="page"
+                                                                     href="userform.html">USER</a>
+          </button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-danger btn-sm m-2"><a class="nav-link active" aria-current="page"
+                                                                     href="addappointment.html">APPOINTMENT</a>
+          </button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-danger btn-sm m-2"><a class="nav-link active" aria-current="page"
+                                                                     href="addprescription.html">PRESCRIPTION</a>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<h1 style="text-align:center">BOOK APPOINTMENT HERE</h1>
+<form style=" width: 100vw; margin-left : 25vw;">
+  <label >Name:</label><br>
+  <input type="text" id="name" placeholder="Enter name here" required><br>
+  <label >Age:</label><br>
+  <input type="text" id="age" placeholder="Enter age here" required><br>
+  <label >Phno:</label><br>
+  <input type="text" id="phno" placeholder="Enter phone number here"required><br>
+<br><br>
+  <label >Select Doctor:</label>
+  <select  id="select_doctor">
+    <option value="Doctor 1 (available form 10am to 1pm)">Doctor 1 (available form 10am to 1pm)</option><br>
+    <option value="Doctor 2(available from 1pm to 6pm)">Doctor 2(available from 1pm to 6pm)</option><br>
+    <option value="Doctor available from 2pm to 6pm">Doctor available from 2pm to 6pm</option><br>
+    <option value="Doctor available from 10am to 3pm">Coctor available from 10am to 3pm</option><br>
+  </select><br><br>
+  <label >Date:</label><br>
+  <input type="text" id="date" required placeholder="Enter date  here"><br>
+  <label for="gender">Select Gender:</label>
+  <select  id="gender" required>
+    <option value="male">male</option><br>
+    <option value="female">female</option><br>
+    <option value="others">others</option><br>
+  </select>
+  <br><br>
+ <button id="btn" value="Submit" onclick="bookPatient()">Submit</button>
+
+</form>
+</body>
+</html>
