@@ -1,0 +1,46 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Fixing Common Issues with CORS</title>
+</head>
+<body>
+<h1>Fixing Common Issues with CORS</h1>
+<div>
+    <textarea id="messages" name="messages" rows="10" cols="50">Messages</textarea><br/>
+    <form id="form1">
+        <input type="button" value="Get v1" onclick="onGet()" />
+    </form>
+</div>
+<!--<script>
+function onGet() {
+const url = "http://localhost:8080/hospitalsystem/prescription";
+var headers = {}
+
+fetch(url, {
+method : "GET",
+mode: 'cors',
+headers: headers
+})
+.then((response) => {
+if (!response.ok) {
+throw new Error(response.error)
+}
+return response.json();
+})
+.then(data => {
+document.getElementById('messages').value = data.messages;
+})
+.catch(function(error) {
+document.getElementById('messages').value = error;
+});
+}
+</script>-->
+<script>
+
+
+
+
+
+</script>
+</body>
+</html>
