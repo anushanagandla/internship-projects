@@ -1,0 +1,5 @@
+com\wavemaker\hospital\implementation\PatientDAOImplementation.class
+com\wavemaker\hospital\PatientManager.class
+com\wavemaker\hospital\servlet\PatientServlet.class
+com\wavemaker\hospital\connectivity\Mysqlconnection.class
+com\wavemaker\hospital\model\Patient.class
